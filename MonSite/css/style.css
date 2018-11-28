@@ -1,0 +1,99 @@
+
+
+/* Charte graphique : #6b5b95 #ff7b25 #feb236 oswald sans-serif */
+
+
+
+/* Style des titres body */
+body {
+  font-size: 16px; /* par défaut */
+  background-color: black;
+  background-image: url("../images/background.png");
+  background-size: 500px 1082px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white  ;
+}
+
+/* Visite des liens */
+a:link {
+  color: #feb236;
+  text-decoration: none;
+}
+
+a:hover {
+    color: #ff7b25;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #feb236;
+    text-decoration: none;
+}
+
+a:active {
+    color: #feb236;
+    text-decoration: none;
+}
+
+/* Style des titres h1 */
+h1 {
+  font-family: "oswald";
+  text-transform: capitalize;
+  font-size: 2.5em;
+  text-align: center;
+  color: #ff7b25;
+}
+
+/* Style des titres h2 */
+h2 {
+  font-family: "oswald";
+  text-transform: capitalize;
+  font-size: 1.5em;
+  text-align: left;
+  color: #ff7b25;
+}
+
+/* Photo CV */
+#photocv {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 115px #ff7b25;
+}
+
+/* Infos adresse */
+.infos1 {
+  font-family: "oswald";
+  text-transform: capitalize;
+  font-size: 1.2em;
+  text-align: center;
+  vertical-align: top;
+  color: #feb236;
+}
+
+.infos2 {
+  font-family: "oswald";
+  text-transform: capitalize;
+  font-size: 0.9em;
+  text-align: center;
+  vertical-align: top;
+  color: #feb236;
+}
+
+/* Logo réseaux sociaux */
+.logo20 {
+  height: 20px;
+  width: 20px;
+}
+
+.placement {
+  border: 1px solid #ff7b25;
+
+}
+
+/* Logo compétences */
+.logocomp {
+  height: 60px;
+  width: 60px;
+}

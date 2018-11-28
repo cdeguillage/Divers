@@ -1,0 +1,53 @@
+.container {
+    width: 602px;
+    height: 600px;
+    border: 2px solid black;
+    position: relative;
+}
+
+.briques {
+    top: 50px;
+    left: 50px;
+    width: 498px;
+    height: 198px;
+    /* border: 1px solid yellow; */
+    position: relative;
+}
+
+.brique {
+    height: 15px;
+    width: 45px;
+    background-color: lightgreen;
+    border: 1px solid green;
+    /* margin: 1px 1px 1px 1px; */
+    position: absolute;
+}
+
+.palet {
+    top: 500px;
+
+    width: 80px;
+    height: 15px;
+    background-color: chartreuse;
+    border: 1px solid black;
+    position: absolute;
+}
+
+.boule {
+    top: 488px;
+    left: 37px;
+
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50% 50%;
+    border: 1px solid black;
+    position: absolute;
+}
+
+.nbbriques {
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    font-size: 10px;
+}

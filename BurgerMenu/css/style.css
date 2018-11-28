@@ -1,0 +1,147 @@
+/* Responsive: coupure à 880 pixels */
+
+body {
+  margin: 0;
+}
+
+header {
+  box-sizing: border-box; /* Prend en compte le contenu, le border et le padding dans la taille */
+  height: 60px;
+  background-color: #8e44ad;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between; /* Espacement entre les éléments du menu */
+}
+
+/* Le 2eme fait 100% du premier qui fait 100% */
+header .logo, header .logo img {
+  height: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  margin: 0;
+}
+
+ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px;
+  margin: 0 10px;
+}
+
+ul li:hover {
+  background-color: white;
+  color: #8e44ad;
+}
+
+ul li a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+ul li:hover a {
+  background-color: white;
+  color: #8e44ad;
+}
+
+#toggle-burger {
+  display: none;
+}
+
+.toggle-burger_label {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.toggle-burger_label div {
+  width: 30px;
+  height: 4px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+label.shadow {
+  display: none;
+}
+
+@media screen and (max-width: 880px) {
+  header {
+    height: 60px;
+    padding: 10px;
+  }
+
+  /* Ouvre le menu burger au clic */
+  #toggle-burger:checked ~ #burger-menu, #toggle-burger:checked ~ label.shadow {
+    display: block;
+  }
+
+  /* Anime le burger */
+  #toggle-burger:checked + .toggle-burger_label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+  }
+
+  #toggle-burger:checked + .toggle-burger_label div:first-child {
+    transform: rotate(45deg);
+  }
+
+  #toggle-burger:checked + .toggle-burger_label div:nth-child(2) {
+    display: none;
+  }
+
+  #toggle-burger:checked + .toggle-burger_label div:last-child {
+    transform: translate( 0, -4px) rotate(-45deg);
+  }
+  /*-- Fin animation --*/
+
+  nav {
+    display: none; /* Cache le menu burger */
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 20%; /* 20% par rapport à la marge droite de la fenêtre */
+    background-color: #8e44ad;
+    justify-content: flex-start;
+    z-index: 100;
+  }
+
+  label.shadow {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 80%; /* 80% par rapport à la marge droite de la fenêtre */
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+  }
+
+  nav ul {
+    padding: 0;
+    margin-top: 60px;
+  }
+
+  nav ul li {
+    box-sizing: border-box;
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .toggle-burger_label {
+    display: flex;
+    z-index: 999; /* Ferme le menu */
+  }
+}

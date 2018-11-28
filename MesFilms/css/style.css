@@ -1,0 +1,57 @@
+
+
+/* Charte graphique : #ff7b25 white black oswald sans-serif */
+
+/* Style des titres body */
+body {
+  font-size: 16px; /* par défaut */
+  background-color: black;
+  color: white  ;
+}
+
+/* Style des titres table */
+table {
+  margin: auto;
+  border-spacing: 10px;
+  /*border-collapse: collapse;
+  padding-left: 10px;*/
+  border: 2px solid white;
+  border-radius: 20px;
+  border-top-style: dotted;
+  border-right-style: solid;
+  border-bottom-style: dotted;
+  border-left-style: solid;
+}
+
+caption {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff7b25;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+th, td {
+  width: auto;
+}
+
+tr {
+  line-height: 25px;
+}
+
+/* Affiche */
+.affiche {
+  height: 125px;
+  width: 100px;
+  box-shadow: 0px 0px 115px #ff7b25;
+}

@@ -1,0 +1,14 @@
+.d-block {
+    width: 800px;
+    height: 400px;
+}
+
+.btn-amoi {
+    background-color: yellow;
+}
+
+.middle {
+    position: absolute;
+    left: 50%;
+    transform: (0, -50%);
+}

@@ -1,0 +1,265 @@
+
+/* Charte graphique : #ff7b25 white black oswald sans-serif */
+
+/* Style des titres body */
+body {
+  font-size: 16px; /* par défaut */
+  background-color: black;
+  color: white;
+  padding: 50px 50px 50px 50px;
+  width: auto;
+}
+
+header {
+  float: none;
+  background: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45) ), url("../images/backorange.jpg");
+  font-family: "Kaushan Script";
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 50px 0px 50px 0px;
+  background-color: #333333;
+  /*height: 20px;*/
+  border-radius: 30px 30px 0px 0px;
+  box-shadow: inset 158px 0px 61px -122px rgba(255,123,37,0.42);
+}
+
+footer {
+  /*clear: both;*/
+  position: fixed;
+  background: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45) ), url("../images/backorange.jpg");
+  font-family: "Kaushan Script";
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+  background-color: #333333;
+  height: 20px;
+  border-radius: 0px 0px 30px 30px;
+  box-shadow: inset 158px 0px 61px -122px rgba(255,123,37,0.42);
+}
+
+/* NAVIGATION VERTICALE SI >=1180 pixels SINON HORIZONTALE */
+/* MEDIA SUPERIEUR OU EGAL A 1180 pixels */
+@media screen and (min-width: 1280px) {
+  header {
+    width: 1180px;
+  }
+
+  footer {
+    width: 1180px;
+  }
+
+  main {
+    margin-left: 277px;
+    width: 900px;
+    height: 658px;
+    background: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45) ), url("../images/theatre360.jpg");
+  }
+
+  .container {
+    width: 1280px;
+    height: auto;
+  }
+
+  nav {
+    float: left;
+    display: block;
+    padding: 25px 75px 450px 50px;
+    background-color: #333333;
+    width: 155px;
+    height: 200px;
+    background: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45) ), url("../images/backorange.jpg");
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: bold;
+    box-shadow: inset 158px 0px 61px -122px rgba(255,123,37,0.42);
+  }
+
+  ul {
+      list-style-type: none;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      width: 150px;
+      background-color: #f1f1f1;
+      border: 1px solid #555;
+  }
+
+  li {
+      text-align: left;
+      border-bottom: 1px solid #555;
+  }
+
+  li>a {
+      display: block;
+      color: #000;
+      padding: 8px 16px 8px 16px;
+      text-decoration: none;
+  }
+
+  /* Modifie le lien du menu (hover) */
+  li>a:hover {
+      background-color: #555;
+      color: white;
+  }
+
+  /* Dessine la fin du menu */
+  li:last-child {
+      border-bottom: none;
+  }
+
+  li::first-letter {
+    font-family: 'UnifrakturCook', cursive;
+  }
+
+  /* Modifie la couleur du menu sur la page principale active */
+  .active {
+      background-color: #ff7b25;
+      color: white;
+  }
+
+  .audio {
+    width: 155px;
+    visibility: visible;
+  }
+
+  .video {
+    width: 180px;
+    height: 140px;
+    visibility: visible;
+  }
+}
+
+/* MEDIA INFERIEUR A 1180 pixels */
+@media screen and (max-width: 1279px) {
+  header {
+    width: 900px;
+  }
+
+  footer {
+    width: 900px;
+  }
+
+  main {
+    margin-left: 0px;
+    width: 620;
+    /*height: auto;*/
+    background: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45) ), url("../images/theatre360.jpg");
+  }
+
+  .container {
+    width: auto;
+    height: auto;
+  }
+
+  nav {
+    /*float: left;*/
+    display: block;
+    padding: 25px 25px 25px 100px;
+    background-color: #333333;
+    width: 775px;
+    height: 30px;
+    background: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45) ), url("../images/backorange.jpg");
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: bold;
+    box-shadow: inset 158px 0px 61px -122px rgba(255,123,37,0.42);
+  }
+
+  ul {
+      display: inline;
+      list-style-type: none;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      width: 150px;
+      background-color: #f1f1f1;
+      border: 1px solid #555;
+      padding: 10px 10px 10px 10px;
+  }
+
+  li {
+      display: inline;
+      text-align: left;
+      /*border-right: 1px solid #555;*/
+  }
+
+  li>a {
+      /*display: inline-block;*/
+      color: #000;
+      padding: 16px 16px 16px 16px;
+      text-decoration: none;
+  }
+
+  /* Modifie le lien du menu (hover) */
+  li>a:hover {
+      background-color: #555;
+      color: white;
+  }
+
+  /* Dessine la fin du menu */
+  /*li:last-child {
+      border-right: none;
+  }*/
+
+  li::first-letter {
+    font-family: 'UnifrakturCook', cursive;
+  }
+
+  /* Modifie la couleur du menu sur la page principale active */
+  .active {
+      background-color: #ff7b25;
+      color: white;
+      padding: 10px 16px 10px 16px;
+  }
+
+  .audio {
+    visibility: hidden;
+  }
+
+  .video {
+    visibility: hidden;
+  }
+}
+
+/************************************************************/
+main {
+  /*position: inherit;*/
+  background-repeat: space;
+  background-blend-mode: luminosity;
+  /*opacity: 0.3;*/
+  background-size: 900px 658px;
+  word-wrap: break-word;
+  overflow-y: auto;
+}
+
+article {
+  padding: 50px 100px 50px 100px;
+  word-wrap: break-word;
+  color: white;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+p::first-letter {
+  font-family: 'UnifrakturCook', cursive;
+  color: #ff7b25;
+  font-size: 3rem;
+  font-weight: bold;
+  vertical-align: baseline;
+}
+
+p {
+  line-height: 130%;
+  width: 700px;
+}
+
+/* Affiche */
+.affiche {
+  height: 125px;
+  width: 100px;
+  box-shadow: 0px 0px 115px #ff7b25;
+}
+
+.centrage {
+  text-align: center;
+}

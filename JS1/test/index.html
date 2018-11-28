@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Fruits</h1>
+    <p id="demo1">Ceci est une liste de fruits : </p>
+    <p id="demo2">Nombre de fruits dans la liste : </p>
+
+    <script>
+        var fruits = [
+            "pommes",
+            "poires",
+            "bananes",
+            "kiwi",
+            "fraise"
+        ];
+
+        for(var i=0; i<fruits.length; i++) {
+            document.getElementById("demo1").innerHTML += fruits[i] + " (" + i + ") * ";
+        }
+        document.getElementById("demo2").innerHTML += fruits.length;
+    </script>
+</body>
+
+</html>

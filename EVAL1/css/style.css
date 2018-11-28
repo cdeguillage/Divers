@@ -1,0 +1,195 @@
+/********************************************/
+/*                                          */
+/* Polices par défaut :                     */
+/*  font-family: Arial, sans-serif;         */
+/*                                          */
+/* Police des titres :                      */
+/*  font-family: 'Courgette', cursive;      */
+/*                                          */
+/* Etoiles dans les titres :                */
+/*    FontAwesome 4.6 => fa-star-o          */
+/*                                          */
+/* Couleurs :                               */
+/*  barre de menus : #C55394                */
+/*    hover menu : #EB43A3                  */
+/*  titre h1 : #C55394                      */
+/*    autres titres : #EB43A3               */
+/*  footer : #E577B5                        */
+/*    noir : #333                           */
+/*    blanc : #FFF                          */
+/*                                          */
+/********************************************/
+
+body {
+  margin: 0;
+  background-image: url("../img/background.png");
+  background-size: auto;
+  background-repeat: repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  box-sizing: border-box; /* Prend en compte le contenu, le border et le padding dans la taille */
+  height: 60px;
+  background-color: #C55394;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between; /* Espacement entre les éléments du menu */
+}
+
+.accueil {
+  font-family: 'Courgette', cursive;
+  font-size: 1.7rem;
+  color: #FFF;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  margin: 0;
+}
+
+ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+  margin: 0.3rem;
+}
+
+ul li:hover {
+  background-color: #EB43A3;
+  color: #FFF;
+}
+
+ul li a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color:  #FFF;
+/*  font-weight: bold;*/
+  font-family: Arial, sans-serif;
+  font-variant-caps:all-small-caps;
+}
+
+ul li:hover a {
+  background-color:  #EB43A3;
+  color: #FFF;
+}
+
+h1 {
+  font-family: 'Courgette', cursive;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #C55394;
+  text-align: center;
+}
+
+/* Container holding the image and the text */
+.bloc_rainbow {
+    position: relative;
+    text-align: center;
+}
+
+.rainbow-image {
+  width: 20%;
+}
+
+/* Bottom right text */
+.bloc-rainbow-texte {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fond-blanc {
+  position: absolute;
+  background-color: #FFF;
+  width: 60%;
+  top: 17%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0 0 7px black;
+  padding: 50px 25px 50px 25px;
+}
+
+h2 {
+  font-family: 'Courgette', cursive;
+  font-size: 1.4rem;
+  /*font-weight: bold;*/
+  color: #EB43A3;
+  text-align: left;
+}
+
+.licorne_tableau {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+img[src*="photo" i] {
+  width: 100%;
+}
+
+figcaption {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #FFF;
+  text-align: center;
+  padding: 0.5rem 0 0.5rem 0;
+  /* On remonte le figcaption sur l'image */
+  transform: translate(0, -2.4rem);
+}
+
+.tableau_noustrouver {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.googlemaps {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.noustrouver {
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  font-family: 'Courgette', cursive;
+  font-size: 1.0rem;
+  color: #EB43A3;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+input {
+  font-size: 1.1rem;
+}
+
+.bouton_newsletter {
+  background-color: #C55394;
+  color: #FFF;
+  border-radius: 1px 1px 1px 1px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #E577B5;
+  color: #FFF;
+  text-align: right;
+  font-size: 0.8rem;
+  height: 35px;
+  padding: 0 5px 0 0;
+}

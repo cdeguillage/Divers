@@ -1,0 +1,140 @@
+﻿/* S'execute à l'ouverture */
+@keyframes animation {
+  /*from {*/
+  0% {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+  }
+  /*to {*/
+  50% {
+    width: 600px;
+    height: 300px;
+    background-color: yellow;
+  }
+  100% {
+    width: 800px;
+    height: 400px;
+    background-color: green;
+  }
+}
+
+.box50 {
+  animation-name: animation;
+  animation-duration: 2s;
+  animation-delay: 3s; /* demarre 3s après l'ouverture */
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+}
+
+/* ANIMATION */
+.box1 {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+.box1:hover {
+  width: 400px;
+}
+
+.box2 {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  transition: width 1s ease;
+}
+
+.box2:hover {
+  width: 400px;
+}
+
+.box3 {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  transition: width 1s, height 2s, background-color: green;
+}
+
+.box3:hover {
+  width: 400px;
+}
+
+.box4 {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  transition: opacity 2s;
+  opacity: 1;
+}
+
+.box4:hover {
+  opacity: 0;
+}
+
+.box5 {
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  transition: opacity 2ms;
+  opacity: 1;
+}
+
+.box5:hover {
+  opacity: 0;
+}
+
+/* TRANSFORMATION */
+.box6 {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+.box6:hover {
+  transform: translate(10%, -10%);
+}
+
+.box7 {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  /*transition: transform 1s linear 1s;*/
+}
+
+.box7:hover {
+  transform: rotate(45deg);
+}
+
+.box8 {
+  width: 200px;
+  height: 200px;
+  background-color: brown;
+  transition: 1s;
+}
+
+.box8:hover {
+  transform: skewX(45deg);
+}
+
+.box9 {
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  transition: 1s;
+}
+
+.box9:hover {
+  transform: scale(2);
+}
+
+.box10 {
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  transition: 1s;
+}
+
+.box10:hover {
+  transform: matrix(12, 5, 27);
+}

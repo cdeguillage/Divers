@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/styles/voiture.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ma toto</title>
+</head>
+<body>
+    
+    <div class="container"> <!--BOOTSTRAP-->
+
+        <div id="matoto" class="jumbotron">
+
+            <h1 class="display-4">Ma toto!</h1>
+            <p class="lead">J'ai plein de belles voitures à vendre... T'en veux ?</p>
+            <hr class="my-4">
+            <p>Choisissez le modèle et la marque souhaités :</p>
+            <p class="lead">
+
+                <div class="row">
+
+                    <!-- VEHICULES -->
+                    <div class="col-3 btn-group">
+                        <button type="button" id="vehicules" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sélectionner un véhicule
+                        </button>
+                        <div id="vehicules-list" class="dropdown-menu">
+                            <!--<a class="dropdown-item" href="#">Aston Martin</a>-->
+                        </div>
+                    </div>
+
+                    <div class="col-1"></div>
+
+                    <!-- MODELES -->
+                    <div class="col-3 btn-group">
+                        <button type="button" id="modeles" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sélectionner un modèle
+                        </button>
+                        <div id="modeles-list" class="dropdown-menu">
+                            <!--<a class="dropdown-item" href="#">Action</a>-->
+                        </div>
+                    </div>
+
+                    <div class="col-1"></div>
+
+                    <!-- IMAGES MODELES-->
+                    <div class="col-4">
+                        <img id="img-modeles" src="" alt="" />
+                    </div>
+
+                </div>
+
+            </p>
+
+        </div>
+
+        <div id="modele-detail">
+            <div class="row">
+                <div class="col-4">
+                    <img src="" id="detailimage" />
+                </div>
+                <div class="col-8">
+                    <div class="row">
+                        <div class="col-12" id="detail1"></div>
+                        <div class="col-12" id="detail2"></div>
+                        <div class="col-12" id="detail3"></div>
+                        <div class="col-12" id="detail4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div> <!--BOOTSTRAP-->
+
+    <!-- BOOTSTRAP -->
+    <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- JS -->
+    <script src="assets/js/voiture.js"></script>
+</body>
+</html>

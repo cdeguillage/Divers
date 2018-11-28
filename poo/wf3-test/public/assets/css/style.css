@@ -1,0 +1,246 @@
+/* ************************************************************************** *\
+
+	LAYOUT
+
+\* ************************************************************************** */
+
+html, body {
+	font-family: 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+    line-height: 20px;
+	margin: 0;
+}
+
+.main-header {
+	z-index: 10;
+	position: relative;
+}
+.main-content {
+}
+
+
+/* --------------------- *\
+	Brand Logo
+\* --------------------- */
+
+.navbar-brand {
+	height: auto;
+}
+
+
+/* --------------------- *\
+	Navbar
+\* --------------------- */
+
+.navbar {
+    margin-bottom: 0;
+    border: none;
+	background-color: #fff;
+}
+
+.nav > li > a {
+    padding: 28px 15px;
+	color: #000;
+	font-weight: 600;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+	background-color: transparent;
+	color: #5DA7B6;
+}
+
+
+/* --------------------- *\
+	Search Form
+\* --------------------- */
+
+.navbar-form {
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+.typeahead { z-index: 1051; }
+
+
+/* --------------------- *\
+	Footer
+\* --------------------- */
+
+.main-footer {
+	margin-top: 60px;
+	margin-bottom: 40px;
+}
+
+
+
+/* ************************************************************************** *\
+
+	HOMEPAGE
+
+\* ************************************************************************** */
+
+
+/* --------------------- *\
+	Carousel
+\* --------------------- */
+
+.oops {
+	position: absolute;
+	z-index: 10;
+	color: #fff;
+	left: 0;
+	right: 0;
+	top: 280px;
+	text-align: center;
+}
+.oops h1 {
+	font-size: 130px;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+.flexslider .slides > li {
+    height: 540px;
+	position: relative;
+}
+
+.flex-caption {
+  width: 100%;
+  padding: 15px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: rgba(255,255,255,.6) !important;
+  color: #333 !important;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+  font-size: 18px;
+  line-height: 18px;
+  margin: 0;
+  text-align: center;
+}
+.flex-direction-nav a {
+    height: 60px;
+}
+
+
+
+/* ************************************************************************** *\
+
+	ARTICLES
+
+\* ************************************************************************** */
+
+.article-admin figure {
+	float: left;
+	margin-right: 30px;
+}
+.article-admin img {
+	height: 100px;
+}
+
+
+
+/* ************************************************************************** *\
+
+	404
+
+\* ************************************************************************** */
+
+
+.oops {
+	position: absolute;
+	z-index: 10;
+	color: #fff;
+	left: 0;
+	right: 0;
+	top: 280px;
+	text-align: center;
+}
+.oops h1 {
+	font-size: 130px;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+
+/* ************************************************************************** *\
+
+	COMPONENTS
+
+\* ************************************************************************** */
+
+
+/* --------------------- *\
+	VIDEO
+\* --------------------- */
+
+
+
+
+.background-video {
+  background-position: top center;
+  background-repeat: no-repeat;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+video,
+source {
+  bottom: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+}
+
+.loaded .ytplayer-container {
+  display: block;
+}
+
+.loaded .placeholder-image {
+  opacity: 0;
+}
+
+.ytplayer-container {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  min-width: 100%;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.placeholder-image {
+  height: 100%;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+.ytplayer-shield {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.ytplayer-player {
+  position: absolute;
+}

@@ -1,0 +1,10 @@
+{
+    "name": "WF3",
+	"dependencies": {
+		"bootstrap": "*",
+        "components-font-awesome": "*",
+		"bootstrap3-typeahead": "git://github.com/bassjobsen/Bootstrap-3-Typeahead.git#master",
+		"flexslider": "*",
+		"youtube-background-video": "*"
+	}
+}

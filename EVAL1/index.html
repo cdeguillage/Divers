@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang=fr dir="ltr">
+  <head>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- Déclaration des Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MyUnicorn</title>
+  </head>
+  <body>
+
+    <header>
+      <!-- Affichage de la marque dans le menu -->
+      <div class="header-menu">
+        <a href="index.html" class="accueil">
+          MyUnicorn
+        </a>
+      </div>
+
+      <!-- Affichage du menu -->
+      <nav id="menu">
+        <ul>
+          <li><a href="#principe">Le principe</a></li>
+          <li><a href="#licorne">Nos licornes</a></li>
+          <li><a href="#contact">Nous trouver</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+
+      <!-- Titre principal et arc-en-ciel -->
+      <div class="bloc_rainbow">
+        <img src="img/rainbow.png" class="rainbow-image" alt="rainbow">
+        <div class="bloc-rainbow-texte">
+          <h1>Un jour, une licorne</h1>
+        </div>
+      </div>
+
+      <section>
+        <div class="fond-blanc">
+
+          <article>
+            <balise id="principe">
+              <h2><i class="far fa-star"></i>&nbsp;Le principe</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dictum dapibus ante, eu aliquam ante euismod eleifend. Ut malesuada augue ut luctus pellentesque. Aenean id varius ipsum. Nunc malesuada ex ut ipsum interdum vestibulum. Integer facilisis finibus orci, sit amet pretium diam placerat vitae. Nunc auctor tincidunt mollis. Nullam quis turpis sed lorem elementum semper eget semper risus. In nec mauris aliquam, congue metus euismod, cursus leo. Vivamus laoreet commodo leo, ut  cursus justo blandit in. Aenean pretium mi a auctor pulvinar. Mauris sodales sollicitudin sodales. Sed mollis sed lectus id facilisis. Quisque pharetra a purus eget porttitor. Proin rhoncus risus non mauris iaculis sodales. Pellentesque euismod dui erat, non sodales ipsum sollicitudin sed.
+              </p>
+              <p>Donec nisi eros, luctus id pretium eget, consequat elementum risus. Fusce eleifend lacinia orci eu iaculis. Vestibulum vestibulum justo quis commodo congue. Aliquam purus leo, dictum in nisl at, pellentesque bibendum mi. Nulla convallis mi eget nisl convallis dictum. Vestibulum a massa lacus. Aenean quis enim diam.
+              </p>
+            </balise><br /><br />
+
+            <balise id="licorne"><h2><i class="far fa-star"></i>&nbsp;Nos licornes</h2>
+              <div class="licorne_tableau">
+                <figure><img src="img/unicorns/photo1.jpg" alt="Lulu Confetty" /><figcaption>Lulu Confetty</figcaption></figure>
+                <figure><img src="img/unicorns/photo2.jpg" alt="Lapillon Magik" /><figcaption>Lapillon Magik</figcaption></figure>
+                <figure><img src="img/unicorns/photo3.jpg" alt="El Ninjacorn" /><figcaption>El Ninjacorn</figcaption></figure>
+                <figure><img src="img/unicorns/photo4.jpg" alt="Sweety Candy" /><figcaption>Sweety Candy</figcaption></figure>
+              </div>
+            </balise>
+
+            <balise id="contact"><h2><i class="far fa-star"></i>&nbsp;Nous trouver</h2>
+              <div class="tableau_noustrouver">
+                <div class="googlemaps">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.1485254233653!2d2.355059415887791!3d48.855378108872536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671fd666f4f9b%3A0xfc148222c580b101!2sLe+Checkpoint+Paris!5e0!3m2!1sfr!2sfr!4v1537542462644" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div class="noustrouver">
+                  <h3>Notre élevage de licornes est situé au :</h3>
+                  <p>18 Rue Geoffroy l'Asnier<br />
+                     75004 Paris<br />
+                     01.23.45.67.89<br />
+                  </p>
+                  <br />
+                  <h3>Newsletter</h3>
+                  <p>Abonnez-vous simplement à notre newsletter mensuelle !</p>
+                  <div class="newsletter">
+                    <form action="newsletter.php" method="post">
+                      <input type="email" for="email" placeholder="votre@email.fr" /><br /><br />
+                      <input type="submit" class="bouton_newsletter" />
+                    </form>
+                </div>
+              </div>
+            </balise>
+          </article>
+        </div> <!-- fond blanc -->
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <p>2016 &copy; WebForce3&nbsp;</p>
+      </div>
+    </footer>
+
+  </body>
+</html>

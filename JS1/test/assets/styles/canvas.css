@@ -1,0 +1,56 @@
+/* Préparation du body */
+body {
+    /* Aucune marge */
+    margin: 0;
+    padding: 0;
+}
+
+/* Préparation du menu */
+#offcanvas {
+    background-color: #333;
+    height: 100%; /* Toute la fenêtre en hauteur */
+    width: 280px; /* Convention */
+
+    position: absolute;
+    top: 0;
+    left: -280px;  /* On masque l'élément du menu (à gauche du navigateur) */
+    bottom: 0;
+
+    -webkit-transition: left 0.3s; /* Transition plus lente */
+    transition: left 0.3s;
+
+    z-index: 2;
+}
+
+#offcanvas a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+/* Désactive le scroll quand on utilise overlay */
+.open {
+    overflow: hidden;
+}
+
+/* Désactive le voile de la page principale si le menu est inactif */
+.overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    z-index: 1;
+}
+
+/* Affiche le voile de la page principale si le menu est actif */
+.open .overlay {
+    display: block;
+}
+
+/* Ouverture du menu */
+.open #offcanvas {
+    left: 0px;
+}

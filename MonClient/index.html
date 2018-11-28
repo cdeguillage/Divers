@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <title>Mes clients</title>
+  </head>
+  <body>
+
+    <h1>Bienvenue sur monbobato.fr<h1>
+
+    <form action="affichedata.html" method="post">
+
+      <!--
+       -->
+      <h2>Qui êtes-vous ?</h2>
+
+        <!-- IDENTITE -->
+        <fieldset legend="identite">
+          <legend>| Identité |</legend>
+
+          <label for="nom">Nom :</label>
+          <input type="text" name="nom" id="nom" maxlength="30" required />
+
+          <label for="prenom">Prénom :</label>
+          <input type="text" name="prenom" id="prenom" maxlength="30" required />
+        </fieldset><br />
+
+        <!-- ADRESSE -->
+        <fieldset legend="adresse">
+          <legend>| Adresse |</legend>
+
+          <label for="adr">Rue :</label>
+          <input type="text" name="rue" id="rue" required />
+
+          <label for="adrcompl">Complément :</label>
+          <input type="text" name="adrcompl" id="adrcompl" />
+
+          <label for="codepostal">Code postal :</label>
+          <input type="number" name="codepostal" id="codepostal" maxlength="5" min="01001" required />
+
+          <label for="ville">Ville :</label>
+          <input type="text" name="ville" id="ville" maxlength="50" required />
+
+          <label for="pays">Pays :</label>
+          <select name="pays" id="pays" required>
+            <optgroup label="Europe">
+              <option value="be">Belgique</option>
+              <option value="de">Deutchland</option>
+              <option value="es">España</option>
+              <option value="fr" selected>France</option>
+              <option value="it">Italia</option>
+            </optgroup>
+            <optgroup label="Hors-Europe">
+              <option value="po">Polska</option>
+              <option value="ru">Russia</option>
+            </optgroup>
+          </select>
+        </fieldset><br />
+
+        <!-- CONTACT -->
+        <fieldset legend="contact">
+          <legend>| Contact |</legend>
+
+          <label for="telfixe">Téléphone fixe :</label>
+          <input type="tel" name="telfixe" id="telfixe" />
+
+          <label for="telmobile">Téléphone portable :</label>
+          <input type="tel" name="telmobile" id="telmobile" />
+
+          <label for="mail">Mail :</label>
+          <input type="email" name="mail" id="mail" required />
+        </fieldset><br />
+
+      <!--
+       -->
+      <h2>A quoi va ressembler votre <span>bobato</span> ?</h2>
+
+        <!-- BATEAU -->
+        <fieldset legend="bateau">
+          <legend>| Votre bobato |</legend>
+
+          <label for="categorie">Catégorie :</label>
+          <select name="categorie" id="categorie" required>
+            <option value="ma">Marchand</option>
+            <option value="mi">Militaire</option>
+            <option value="pl" selected>Plaisance</option>
+            <option value="pn">Pneumatique</option>
+            <option value="ap">A pédales</option>
+            <option value="vo">Voilier</option>
+          </select>
+
+          <label for="marque">Marque :</label>
+          <select name="marque" id="marque" required>
+            <optgroup label="Plaisance">
+              <option value="th">Tahoe</option>
+              <option value="pc">Pincecraft</option>
+              <option value="st">Suntracker</option>
+            </optgroup>
+
+            <optgroup label="Militaire">
+              <option value="cg">Charles-de-gaulle</option>
+              <option value="bc">Brest coulage</option>
+            </optgroup>
+
+            <optgroup label="Marchand">
+              <option value="mc">Monblé compagny</option>
+            </optgroup>
+
+            <optgroup label="A pédales">
+              <option value="pb">Pédalo blue</option>
+            </optgroup>
+
+            <optgroup label="Pneumatique">
+              <option value="ru">Rustine sailer</option>
+              <option value="ps">Pschiiiiiit valve</option>
+            </optgroup>
+          </select>
+
+          <label for="taille">Taille :</label>
+
+          <label for="datelivraison">Date de livraison :</label>
+          <input type="date" name="datelivraison" id="datelivraison" min="2018-09-07" value="2018-09-07" />
+
+          <br /><br />
+
+          <fieldset label="couleur">
+            <legend>[ Choississez votre couleur ]</legend>
+            <!--<label for="couleur">Couleur :</label>
+                <input type="color" name="couleur" id="couleur" value="#ffffff" />-->
+            <input type="radio" name="couleur" id="couleurblanc" value="Blanc" checked />
+            <label for="couleurblanc">Blanc</label>
+            <input type="radio" name="couleur" id="couleurnoir" value="Noir" />
+            <label for="couleurnoir">Noir</label>
+            <input type="radio" name="couleur" id="couleurbleu" value="Bleu" />
+            <label for="couleurbleu">Bleu</label>
+          </fieldset>
+
+          <br />
+
+          <fieldset label="options">
+            <legend>[ Choississez vos options ]</legend>
+            <input type="checkbox" id="bouee" name="options" value="bouee" checked />
+            <label for="bouee">Bouée</label>
+            <input type="checkbox" id="radar" name="options" value="radar" />
+            <label for="radar">Radar</label>
+            <input type="checkbox" id="turbo" name="options" value="turbo" />
+            <label for="turbo">Turbo</label>
+            <input type="checkbox" id="rames" name="options" value="rames" checked />
+            <label for="rames">Rames</label>
+          </fieldset>
+
+        </fieldset><br />
+
+      <!-- VALIDATION DU FORMULAIRE -->
+      <input type="submit" value="Commander" />
+
+      <br /><br />
+
+    </form>
+
+  </body>
+</html>

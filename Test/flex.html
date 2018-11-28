@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang=fr dir="ltr">
+  <head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <audio autoplay="false" id="beep" src="audio/beep1.mp3">
+    </audio>
+    <script>
+        function JouerSon() {
+                var sound = document.getElementById("beep");
+                sound.play();
+            }
+    </script>
+
+    <br />
+    <div class="digicode">
+      <div class="horizontal">
+        <div class="btn-bouton" onclick="JouerSon()">1</div>
+        <div class="btn-bouton" onclick="JouerSon()">2</div>
+        <div class="btn-bouton" onclick="JouerSon()">3</div>
+      </div>
+      <div class="horizontal">
+        <div class="btn-bouton" onclick="JouerSon()">4</div>
+        <div class="btn-bouton" onclick="JouerSon()">5</div>
+        <div class="btn-bouton" onclick="JouerSon()">6</div>
+      </div>
+      <div class="horizontal">
+        <div class="btn-bouton" onclick="JouerSon()">7</div>
+        <div class="btn-bouton" onclick="JouerSon()">8</div>
+        <div class="btn-bouton" onclick="JouerSon()">9</div>
+      </div>
+      <div class="horizontal">
+        <div class="btn-bouton" onclick="JouerSon()">*</div>
+        <div class="btn-bouton" onclick="JouerSon()">0</div>
+        <div class="btn-bouton" onclick="JouerSon()">#</div>
+      </div>
+    </div>
+  </body>
+</html>

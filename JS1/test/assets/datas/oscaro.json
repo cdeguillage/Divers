@@ -1,0 +1,18 @@
+{
+    "Ford": [
+        "Mustang",
+        "Kuga",
+        "F150",
+        "F250"
+    ],
+    "Opel": [
+        "Corsa",
+        "Astra",
+        "Mokka"
+    ],
+    "Peugeot": [
+        "",
+        "",
+        ""
+    ]
+}

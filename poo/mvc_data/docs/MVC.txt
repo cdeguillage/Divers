@@ -1,0 +1,17 @@
+Sch�ma d'utilisation d'un mod�le MVC
+------------------------------------
+User -> Controller
+Controller -> Model
+Model -> Controller
+Controller -> View
+View -> User
+
+User       :
+Controller : Fonctions
+Model      : Base de donn�es
+View       : Affichage
+
+
+http://campus-osw3.gitbook.io/programmation-orient-objet-avec-php/note/methodes-chainees
+
+

@@ -1,0 +1,30 @@
+
+
+/* Charte graphique : #ff7b25 white black oswald sans-serif */
+
+/* Style des titres body */
+body {
+  font-size: 16px; /* par défaut */
+  background-color: white;
+  background-image: url("../images/background.jpg");
+  background-size: 2000px 1100px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: black  ;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3, legend {
+  font-size: 1.3rem;
+}
+
+label, input, select {
+  font-size: 1rem;
+}
